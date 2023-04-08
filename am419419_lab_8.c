@@ -38,13 +38,13 @@ void heapSort(int pData[], int n)
       heapify(pData, n, i);
 	}
   
-    // Heap sort
+    
     for (int i = n - 1; i >= 0; i--) {
       int temp = pData[0];
         pData[0] = pData[i];
         pData[i] = temp;
   
-      // Heapify root element to get highest element at root again
+      
       heapify(pData, i, 0);
     }
 
